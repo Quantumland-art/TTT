@@ -3,7 +3,20 @@ Transition Table Tools
 
 ![Package logo](/icon.png)
 
+## About
+In this repo you will find abstractions that will help build transition tables for music pitch succession. These transition tables (TT) are helpful for algorithmic composition using quantum computers as demostrated by [BMA](https://github.com/iccmr-quantum/Miranda_Basak_Demos).
+
+__TTcomp__: allows the composer to create TT by dialing in the exact weights to each transition.
+
+__TTperf__: allows the performer to generate TT just by sending in raw MIDI data.
+
+__TTnorm__: is used by both _TTcomp_ and _TTperf_ to make sure the TT values are normalized.
+
+__BMA+TTperf__: is an example of using _TTperf_ with [BMA](https://github.com/iccmr-quantum/Miranda_Basak_Demos).
+
 ## Installation
+Before starting, make sure you have [Max](http://cycling74.com) installed, as well as [The QAC toolkit](http://quantumland.art/qac) Max package.
+
 Clone or [download](https://github.com/Quantumland-art/TTT/archive/refs/heads/main.zip) this repo and unzip it somewhere in the Max path (e.g. Documents/Max 8/Library).
 
 ## Feedback and Getting help
