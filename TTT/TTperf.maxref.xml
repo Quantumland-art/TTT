@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+
+
+<!-- EDIT THIS FILE AT YOUR OWN RISK -->
+
+
+<c74object name='TTperf' category='utilities'>
+
+	<digest>Generate transition tables from raw MIDI. </digest>
+	<description>Generate transition tables from raw MIDI. Use these automatically generated tables to control your algorithmic composition patch (e.g. <a href="https://github.com/iccmr-quantum/Miranda_Basak_Demos">BMA</a>). </description>
+
+
+	<!--METADATA-->
+
+	<metadatalist>
+		<metadata name='author'>Omar Costa Hamido </metadata>
+		<metadata name='tag'>utilities</metadata>
+	</metadatalist>
+
+
+	<!--ARGUMENTS-->
+
+	<objarglist>
+
+		<objarg name='note_names' optional='1' type='bool'>
+			<digest>MIDI note names </digest>
+			<description>When set to 1, TTperf will use MIDI note names for the transition table labels. <br/>When set to 0, TTperf will use MIDI note numbers for the transition table labels. <br/>This defaults to 0. </description>
+		</objarg>
+
+	</objarglist>
+
+
+	<!--MESSAGES-->
+
+	<!-- <methodlist>
+
+		<method name='list'>
+			<digest>Qasm code </digest>
+			<description>udp_qasm is expecting to receive a list of 2 symbols. The first one "qasm" and the second one containing all the Qasm code. </description>
+		</method>
+
+	</methodlist> -->
+
+
+	<!--ATTRIBUTES-->
+
+	<attributelist>
+
+		<attribute name='note_names' get='1' set='1' type='bool' size='1'>
+			<digest>MIDI note names </digest>
+			<description>When set to 1, TTperf will use MIDI note names for the transition table labels. <br/>When set to 0, TTperf will use MIDI note numbers for the transition table labels. <br/>This defaults to 0. </description>
+		</attribute>
+
+	</attributelist>
+
+
+	<!--INLETS-->
+
+	<inletlist>
+
+		<inlet id="0" type="bool">
+			<digest>Listen</digest>
+			<description>Similar to a gate object, when set to Non-zero TTperf will start listening to the MIDI input on the right inlet. <br/>When set to 0, TTperf will no longer listen to input on the right inlet and will calculate and output the transition table via the left outlet (as well as set of TTcomp instructions via right outlet). <br/>The next time TTperf is open it will start calculating an entirely new transition table. </description>
+		</inlet>
+
+		<inlet id="1" type="anything">
+			<digest>MIDI in</digest>
+			<description>Send raw MIDI into the right inlet of TTperf. </description>
+		</inlet>
+
+	</inletlist>
+
+
+	<!--OUTLETS-->
+
+	<outletlist>
+
+		<outlet id="0" type="list">
+			<digest>Transition Table</digest>
+			<description>TTperf output is a list of symbols, where each symbol is one row of the transition table (a list of floats) preceeded by the label for that row. <br/>Please see description of the argument or @note_names attribute above for more about the labels. </description>
+		</outlet>
+		
+		<outlet id="1" type="list">
+			<digest>Connect to TTcomp</digest>
+			<description>TTperf allows the user to automatically format its output in order to easily configure TTcomp with the same Transition Table. <br/>Simply connect this second outlet to the inlet of TTcomp to set this up. </description>
+		</outlet>
+
+	</outletlist>
+
+
+	<!--RELATED-->
+
+	<seealsolist>
+		<seealso name='TTcomp' />
+		<seealso name='TTnorm' />
+		<seealso name='och.mtos' />
+		<seealso name='och.microqiskit' />
+	</seealsolist>
+
+	<!--INLETS again-->
+	<misc name = "Input">
+
+		<entry name="inlet 0" type="bool">
+			<digest>Listen</digest>
+			<description>Similar to a gate object, when set to Non-zero TTperf will start listening to the MIDI input on the right inlet. <br/>When set to 0, TTperf will no longer listen to input on the right inlet and will calculate and output the transition table via the left outlet (as well as set of TTcomp instructions via right outlet). <br/>The next time TTperf is open it will start calculating an entirely new transition table. </description>
+		</entry>
+
+		<entry name="inlet 1" type="anything">
+			<digest>MIDI in</digest>
+			<description>Send raw MIDI into the right inlet of TTperf. </description>
+		</entry>
+
+	</misc>
+
+
+	<!--OUTLETS again-->
+	<misc name = "Output">
+		
+		<entry name="outlet 0" type="list">
+			<digest>Transition Table</digest>
+			<description>TTperf output is a list of symbols, where each symbol is one row of the transition table (a list of floats) preceeded by the label for that row. <br/>Please see description of the argument or @note_names attribute above for more about the labels. </description>
+		</entry>
+		
+		<entry name="outlet 1" type="list">
+			<digest>Connect to TTcomp</digest>
+			<description>TTperf allows the user to automatically format its output in order to easily configure TTcomp with the same Transition Table. <br/>Simply connect this second outlet to the inlet of TTcomp to set this up. </description>
+		</entry>
+
+	</misc>
+
+
+</c74object>
