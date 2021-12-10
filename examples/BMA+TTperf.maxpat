@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 145.75, 155.0, 40.0, 22.0 ],
+					"text" : "midiin"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-14",
 					"linecount" : 3,
 					"maxclass" : "comment",
@@ -211,8 +223,8 @@
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 24.0, 187.0, 56.0, 22.0 ],
 					"text" : "TTperf 1"
 				}
@@ -4969,6 +4981,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 1 ],
+					"midpoints" : [ 155.25, 181.5, 70.5, 181.5 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-60", 0 ],
 					"source" : [ "obj-50", 0 ]
 				}
@@ -5074,57 +5094,57 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "och.mset.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/The QAC Toolkit/patchers",
-				"patcherrelativepath" : "../../../../../../Users/och/Documents/Max 8/Packages/The QAC Toolkit/patchers",
+				"bootpath" : "~/Downloads/Mastering-Quantum-Computing-with-IBM-QX/Chapter08",
+				"patcherrelativepath" : "../../../../../../Users/omar/Downloads/Mastering-Quantum-Computing-with-IBM-QX/Chapter08",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "och.hset.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/The QAC Toolkit/patchers",
-				"patcherrelativepath" : "../../../../../../Users/och/Documents/Max 8/Packages/The QAC Toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/och/patchers",
+				"patcherrelativepath" : "../../../../../../Users/omar/Documents/Max 8/Packages/och/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "och.xset.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/The QAC Toolkit/patchers",
-				"patcherrelativepath" : "../../../../../../Users/och/Documents/Max 8/Packages/The QAC Toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/och/patchers",
+				"patcherrelativepath" : "../../../../../../Users/omar/Documents/Max 8/Packages/och/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "och.states2qubits.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/The QAC Toolkit/patchers",
-				"patcherrelativepath" : "../../../../../../Users/och/Documents/Max 8/Packages/The QAC Toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/och/patchers",
+				"patcherrelativepath" : "../../../../../../Users/omar/Documents/Max 8/Packages/och/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "och.binstr2dec.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/The QAC Toolkit/patchers",
-				"patcherrelativepath" : "../../../../../../Users/och/Documents/Max 8/Packages/The QAC Toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Library",
+				"patcherrelativepath" : "../../../../../../Users/omar/Documents/Max 8/Library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TTperf.maxpat",
-				"bootpath" : "/Volumes/GoogleDrive/.shortcut-targets-by-id/1yqYwm7x3irc1CdHYUgMJrRZBwzLQHoie/_DROPBOX/TTT",
+				"bootpath" : "/Volumes/GoogleDrive/My Drive/PLYMOUTH/_DROPBOX/TTT",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TTnorm.maxpat",
-				"bootpath" : "/Volumes/GoogleDrive/.shortcut-targets-by-id/1yqYwm7x3irc1CdHYUgMJrRZBwzLQHoie/_DROPBOX/TTT",
+				"bootpath" : "/Volumes/GoogleDrive/My Drive/PLYMOUTH/_DROPBOX/TTT",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "och.stom.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/The QAC Toolkit/patchers",
-				"patcherrelativepath" : "../../../../../../Users/och/Documents/Max 8/Packages/The QAC Toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Library",
+				"patcherrelativepath" : "../../../../../../Users/omar/Documents/Max 8/Library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
