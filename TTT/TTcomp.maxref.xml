@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+
+
+<!-- EDIT THIS FILE AT YOUR OWN RISK -->
+
+
+<c74object name='TTcomp' category='utilities'>
+
+	<digest>Create transition tables. </digest>
+	<description>Create transition tables from user input. Use the embedded matrixctrk GUI or send messages to build it programmaically. You can either use this abstraction as a regular object box to double click and open its interface or as a bpatcher. Use the resulting tables to control your algorithmic composition patch (e.g. <a href="https://github.com/iccmr-quantum/Miranda_Basak_Demos">BMA</a>). </description>
+
+
+	<!--METADATA-->
+
+	<metadatalist>
+		<metadata name='author'>Omar Costa Hamido </metadata>
+		<metadata name='tag'>utilities</metadata>
+	</metadatalist>
+
+
+	<!--ARGUMENTS-->
+
+	<objarglist>
+
+		<objarg name='size' optional='0' type='int'>
+			<digest>Size of Transition Table </digest>
+			<description>The chosen int n will set the size of the transition table to n x n. <br/>This defaults to 4. </description>
+		</objarg>
+
+		<objarg name='labels' optional='0' type='list'>
+			<digest>Transition Table labels </digest>
+			<description>Insert the labels for each row/column. <br/>This will be a list of ints or symbols for setting the labels using MIDI note numbers or MIDI note names, respectively. <br/>Note: if using symbols you can set your own labels, and TTcomp will respect those labels. <br/>This defaults to 60 61 62 63. </description>
+		</objarg>
+
+	</objarglist>
+
+
+	<!--MESSAGES-->
+
+	<methodlist>
+
+		<method name='list'>
+			<digest>Set cell state </digest>
+			<description>A simple list of numbers will be interpreted in the same manner as the matrixctrl object. <br/>A list of ints sets cells in the <o>TTcomp</o> using the format &lt;horizontal-coordinate vertical-coordinate value&gt;. Multiple triplets of values can be used to set more than one cell. Coordinates for the cells start at 0 in the upper-left hand corner and the values for each cell start at 0 and go up to 100. Substituting the symbols <m>inc</m> and <m>dec</m> in place of the value will increment or decrement that cell coordinate by a value of one. </description>
+		</method>
+
+		<method name='bang'>
+			<digest>Force output of TTcomp </digest>
+			<description><m>bang</m> causes <o>TTcomp</o> to calculate and output the transition table again. </description>
+		</method>
+
+		<method name='size'>
+			<digest>Size of Transition Table </digest>
+			<description>The message <m>size</m> followed by the int n will set the size of the transition table to n x n. </description>
+		</method>
+
+		<method name='labels' optional='0' type='list'>
+			<digest>Transition Table labels </digest>
+			<description>The message <m>labels</m> followed by a list sets the labels for each row/column. <br/>This will be a list of ints or symbols for setting the labels using MIDI note numbers or MIDI note names, respectively. <br/>Note: if using symbols you can set your own labels, and TTcomp will respect those labels. </description>
+		</method>
+
+	</methodlist>
+
+
+	<!--ATTRIBUTES-->
+
+	<attributelist>
+
+		<attribute name='size' get='1' set='1' type='int' size='1'>
+			<digest>Size of Transition Table </digest>
+			<description>The chosen int n will set the size of the transition table to n x n. <br/>This defaults to 4. </description>
+		</attribute>
+
+		<attribute name='labels' get='1' set='1' type='list' size=''>
+			<digest>Transition Table labels </digest>
+			<description>Insert the labels for each row/column. <br/>This will be a list of ints or symbols for setting the labels using MIDI note numbers or MIDI note names, respectively. <br/>Note: if using symbols you can set your own labels, and TTcomp will respect those labels. <br/>This defaults to 60 61 62 63. </description>
+		</attribute>
+
+	</attributelist>
+
+
+	<!--INLETS-->
+
+<!-- 	<inletlist>
+
+		<inlet id="0" type="bool">
+			<digest>Listen</digest>
+			<description>Similar to a gate object, when set to Non-zero TTperf will start listening to the MIDI input on the right inlet. <br/>When set to 0, TTperf will no longer listen to input on the right inlet and will calculate and output the transition table via the left outlet (as well as set of TTcomp instructions via right outlet). <br/>The next time TTperf is open it will start calculating an entirely new transition table. </description>
+		</inlet>
+
+		<inlet id="1" type="anything">
+			<digest>MIDI in</digest>
+			<description>Send raw MIDI into the right inlet of TTperf. </description>
+		</inlet>
+
+	</inletlist> -->
+
+
+	<!--OUTLETS-->
+
+	<outletlist>
+
+		<outlet id="0" type="list">
+			<digest>Transition Table</digest>
+			<description>TTperf output is a list of symbols, where each symbol is one row of the transition table (a list of floats) preceeded by the label for that row. <br/>Please see description of the argument or @note_names attribute above for more about the labels. </description>
+		</outlet>
+		
+<!-- 		<outlet id="1" type="list">
+			<digest>Connect to TTcomp</digest>
+			<description>TTperf allows the user to automatically format its output in order to easily configure TTcomp with the same Transition Table. <br/>Simply connect this second outlet to the inlet of TTcomp to set this up. </description>
+		</outlet> -->
+
+	</outletlist>
+
+
+	<!--RELATED-->
+
+	<seealsolist>
+		<seealso name='TTperf' />
+		<seealso name='TTnorm' />
+		<seealso name='och.mtos' />
+		<seealso name='och.microqiskit' />
+	</seealsolist>
+
+	<!-- <misc name = "Output">
+		<entry name ="list">
+			<digest>Execution counts </digest>
+			<description>Outputs a list containing 2 symbols. The first one "counts" and the second one containing all the execution counts in the format "bitstring counts bitstring counts ...".  </description>
+		</entry>
+	</misc> -->
+
+
+</c74object>
