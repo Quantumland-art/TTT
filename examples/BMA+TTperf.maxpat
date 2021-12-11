@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 741.0, 145.0, 645.0, 743.0 ],
+		"rect" : [ 160.0, 131.0, 645.0, 743.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,49 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 191.0, 192.0, 32.0, 22.0 ],
+					"text" : "print"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-9",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "TTcomp.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 364.75, 56.5, 156.5, 152.5 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 24.0, 578.5, 255.0, 22.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "newobj",
@@ -94,7 +137,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 116.5, 463.0, 70.5, 22.0 ],
+					"patching_rect" : [ 126.166666666666686, 463.0, 65.5, 22.0 ],
 					"text" : "join"
 				}
 
@@ -106,7 +149,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 168.0, 429.5, 57.0, 22.0 ],
+					"patching_rect" : [ 172.833333333333343, 429.5, 57.0, 22.0 ],
 					"text" : "och.stom"
 				}
 
@@ -130,7 +173,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 168.0, 384.0, 29.5, 22.0 ],
+					"patching_rect" : [ 172.833333333333343, 384.0, 29.5, 22.0 ],
 					"text" : "$1"
 				}
 
@@ -142,7 +185,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 116.5, 384.0, 29.5, 22.0 ],
+					"patching_rect" : [ 126.166666666666686, 384.0, 29.5, 22.0 ],
 					"text" : "$1"
 				}
 
@@ -154,7 +197,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 116.5, 353.0, 122.0, 22.0 ],
+					"patching_rect" : [ 126.166666666666686, 353.0, 112.333333333333314, 22.0 ],
 					"text" : "t l l l"
 				}
 
@@ -166,7 +209,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 116.5, 323.0, 71.0, 22.0 ],
+					"patching_rect" : [ 126.166666666666686, 323.0, 71.0, 22.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -178,7 +221,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "", "clear" ],
-					"patching_rect" : [ 93.0, 262.0, 66.0, 22.0 ],
+					"patching_rect" : [ 102.666666666666671, 262.0, 66.0, 22.0 ],
 					"text" : "t b l clear"
 				}
 
@@ -190,7 +233,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 116.5, 294.0, 25.0, 22.0 ],
+					"patching_rect" : [ 126.166666666666686, 294.0, 25.0, 22.0 ],
 					"text" : "iter"
 				}
 
@@ -200,21 +243,10 @@
 					"id" : "obj-47",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "bang", "", "" ],
-					"patching_rect" : [ 24.0, 232.0, 157.0, 22.0 ],
-					"text" : "t b l l"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-45",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 334.0, 56.5, 255.0, 22.0 ]
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "", "", "" ],
+					"patching_rect" : [ 24.0, 232.0, 255.0, 22.0 ],
+					"text" : "t b l l l"
 				}
 
 			}
@@ -320,7 +352,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 163.0, 56.5, 50.0, 22.0 ],
-					"text" : "6"
+					"text" : "3"
 				}
 
 			}
@@ -367,7 +399,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 162.0, 262.0, 67.0, 22.0 ],
+					"patching_rect" : [ 181.333333333333343, 262.0, 67.0, 22.0 ],
 					"text" : "value rules"
 				}
 
@@ -4448,7 +4480,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-119",
-					"items" : [ "C3", ",", "C#3", ",", "D3", ",", "D#3", ",", "E3", ",", "F3", ",", "F#3", ",", "G3", ",", "G#3", ",", "A3", ",", "A#3", ",", "B3" ],
+					"items" : [ "C4", ",", "C#4", ",", "D4", ",", "D#4", ",", "E4", ",", "F4", ",", "F#4", ",", "G4", ",", "G#4", ",", "A4", ",", "A#4", ",", "B4" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -4597,6 +4629,21 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 393.0, 536.0, 31.0, 22.0 ],
 					"text" : "stop"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"background" : 1,
+					"bgcolor" : [ 0.407843137254902, 0.776470588235294, 0.415686274509804, 1.0 ],
+					"id" : "obj-16",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 314.25, 11.0, 318.75, 268.0 ],
+					"proportion" : 0.5
 				}
 
 			}
@@ -4891,18 +4938,25 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-45", 1 ],
-					"midpoints" : [ 33.5, 219.0, 296.5, 219.0, 296.5, 45.5, 579.5, 45.5 ],
+					"destination" : [ "obj-23", 0 ],
 					"order" : 0,
-					"source" : [ "obj-3", 0 ]
+					"source" : [ "obj-3", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
-					"order" : 1,
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"midpoints" : [ 70.5, 219.0, 296.5, 219.0, 296.5, 45.5, 374.25, 45.5 ],
+					"order" : 1,
+					"source" : [ "obj-3", 1 ]
 				}
 
 			}
@@ -4952,6 +5006,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 1 ],
+					"source" : [ "obj-47", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-67", 0 ],
 					"source" : [ "obj-47", 0 ]
 				}
@@ -4967,7 +5028,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-119", 0 ],
-					"midpoints" : [ 149.5, 315.0, 402.5, 315.0 ],
+					"midpoints" : [ 159.166666666666686, 315.0, 402.5, 315.0 ],
 					"source" : [ "obj-49", 2 ]
 				}
 
@@ -5047,7 +5108,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-67", 0 ],
-					"midpoints" : [ 126.0, 493.5, 33.5, 493.5 ],
+					"midpoints" : [ 135.666666666666686, 493.5, 33.5, 493.5 ],
 					"source" : [ "obj-66", 0 ]
 				}
 
@@ -5063,6 +5124,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 0 ],
+					"midpoints" : [ 374.25, 220.0, 33.5, 220.0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
@@ -5092,60 +5161,83 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-9::obj-24" : [ "toggle", "toggle", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "och.mset.maxpat",
 				"bootpath" : "~/Downloads/Mastering-Quantum-Computing-with-IBM-QX/Chapter08",
-				"patcherrelativepath" : "../../../../../../Users/omar/Downloads/Mastering-Quantum-Computing-with-IBM-QX/Chapter08",
+				"patcherrelativepath" : "../../../../Downloads/Mastering-Quantum-Computing-with-IBM-QX/Chapter08",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "och.hset.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/och/patchers",
-				"patcherrelativepath" : "../../../../../../Users/omar/Documents/Max 8/Packages/och/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/och/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "och.xset.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/och/patchers",
-				"patcherrelativepath" : "../../../../../../Users/omar/Documents/Max 8/Packages/och/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/och/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "och.states2qubits.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/och/patchers",
-				"patcherrelativepath" : "../../../../../../Users/omar/Documents/Max 8/Packages/och/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/och/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "och.binstr2dec.maxpat",
 				"bootpath" : "~/Documents/Max 8/Library",
-				"patcherrelativepath" : "../../../../../../Users/omar/Documents/Max 8/Library",
+				"patcherrelativepath" : "../../../Max 8/Library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TTperf.maxpat",
 				"bootpath" : "/Volumes/GoogleDrive/My Drive/PLYMOUTH/_DROPBOX/TTT",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "../../../../../../Volumes/GoogleDrive/My Drive/PLYMOUTH/_DROPBOX/TTT",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TTnorm.maxpat",
 				"bootpath" : "/Volumes/GoogleDrive/My Drive/PLYMOUTH/_DROPBOX/TTT",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "../../../../../../Volumes/GoogleDrive/My Drive/PLYMOUTH/_DROPBOX/TTT",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "och.stom.maxpat",
 				"bootpath" : "~/Documents/Max 8/Library",
-				"patcherrelativepath" : "../../../../../../Users/omar/Documents/Max 8/Library",
+				"patcherrelativepath" : "../../../Max 8/Library",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "TTcomp.maxpat",
+				"bootpath" : "~/Documents/Max 8/Library",
+				"patcherrelativepath" : "../../../Max 8/Library",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "TTcomp.js",
+				"bootpath" : "~/Documents/Max 8/Library",
+				"patcherrelativepath" : "../../../Max 8/Library",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
