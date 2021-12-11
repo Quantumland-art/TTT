@@ -40,12 +40,26 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-23",
-					"maxclass" : "newobj",
+					"fontface" : 3,
+					"id" : "obj-18",
+					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 191.0, 192.0, 32.0, 22.0 ],
-					"text" : "print"
+					"patching_rect" : [ 466.25, 27.0, 55.0, 20.0 ],
+					"presentation_linecount" : 2,
+					"text" : "TTcomp"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 3,
+					"id" : "obj-17",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 213.0, 27.0, 46.0, 20.0 ],
+					"text" : "TTperf"
 				}
 
 			}
@@ -109,12 +123,12 @@
 				"box" : 				{
 					"fontface" : 3,
 					"id" : "obj-68",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.0, 695.0, 265.0, 33.0 ],
-					"text" : "BMA + Transition Table Performer\nOmar Costa Hamido (2021-12-03)"
+					"patching_rect" : [ 24.0, 681.0, 265.0, 47.0 ],
+					"text" : "BMA + Transition Table Performer\n& Transition Table Composer\nOmar Costa Hamido (2021-12-11)"
 				}
 
 			}
@@ -352,7 +366,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 163.0, 56.5, 50.0, 22.0 ],
-					"text" : "3"
+					"text" : "2"
 				}
 
 			}
@@ -3394,7 +3408,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 50.0, 93.0, 125.0, 22.0 ],
-													"text" : "0 0 0 0 0 0 0 1 0 1 0 0"
+													"text" : "0 0 1 1 1 0 0 0 1 0 1 0"
 												}
 
 											}
@@ -4938,14 +4952,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"order" : 0,
-					"source" : [ "obj-3", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
 					"source" : [ "obj-3", 0 ]
 				}
@@ -4955,7 +4961,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"midpoints" : [ 70.5, 219.0, 296.5, 219.0, 296.5, 45.5, 374.25, 45.5 ],
-					"order" : 1,
 					"source" : [ "obj-3", 1 ]
 				}
 
@@ -5173,70 +5178,70 @@
 		"dependency_cache" : [ 			{
 				"name" : "och.mset.maxpat",
 				"bootpath" : "~/Downloads/Mastering-Quantum-Computing-with-IBM-QX/Chapter08",
-				"patcherrelativepath" : "../../../../Downloads/Mastering-Quantum-Computing-with-IBM-QX/Chapter08",
+				"patcherrelativepath" : "../../../../../Downloads/Mastering-Quantum-Computing-with-IBM-QX/Chapter08",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "och.hset.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/och/patchers",
-				"patcherrelativepath" : "../../../Max 8/Packages/och/patchers",
+				"patcherrelativepath" : "../../../Packages/och/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "och.xset.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/och/patchers",
-				"patcherrelativepath" : "../../../Max 8/Packages/och/patchers",
+				"patcherrelativepath" : "../../../Packages/och/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "och.states2qubits.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/och/patchers",
-				"patcherrelativepath" : "../../../Max 8/Packages/och/patchers",
+				"patcherrelativepath" : "../../../Packages/och/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "och.binstr2dec.maxpat",
 				"bootpath" : "~/Documents/Max 8/Library",
-				"patcherrelativepath" : "../../../Max 8/Library",
+				"patcherrelativepath" : "../..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TTperf.maxpat",
-				"bootpath" : "/Volumes/GoogleDrive/My Drive/PLYMOUTH/_DROPBOX/TTT",
-				"patcherrelativepath" : "../../../../../../Volumes/GoogleDrive/My Drive/PLYMOUTH/_DROPBOX/TTT",
+				"bootpath" : "~/Documents/Max 8/Library/TTT/TTT",
+				"patcherrelativepath" : "../TTT",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TTnorm.maxpat",
-				"bootpath" : "/Volumes/GoogleDrive/My Drive/PLYMOUTH/_DROPBOX/TTT",
-				"patcherrelativepath" : "../../../../../../Volumes/GoogleDrive/My Drive/PLYMOUTH/_DROPBOX/TTT",
+				"bootpath" : "~/Documents/Max 8/Library/TTT/TTT",
+				"patcherrelativepath" : "../TTT",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "och.stom.maxpat",
 				"bootpath" : "~/Documents/Max 8/Library",
-				"patcherrelativepath" : "../../../Max 8/Library",
+				"patcherrelativepath" : "../..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TTcomp.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library",
-				"patcherrelativepath" : "../../../Max 8/Library",
+				"bootpath" : "~/Documents/Max 8/Library/TTT/TTT",
+				"patcherrelativepath" : "../TTT",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TTcomp.js",
-				"bootpath" : "~/Documents/Max 8/Library",
-				"patcherrelativepath" : "../../../Max 8/Library",
+				"bootpath" : "~/Documents/Max 8/Library/TTT/TTT",
+				"patcherrelativepath" : "../TTT",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -5252,6 +5257,9 @@
 		"autosave" : 0,
 		"boxgroups" : [ 			{
 				"boxes" : [ "obj-42", "obj-116", "obj-122", "obj-119", "obj-97", "obj-99", "obj-104", "obj-148", "obj-41", "obj-101", "obj-95", "obj-107", "obj-102", "obj-106", "obj-150", "obj-130", "obj-118", "obj-142", "obj-146", "obj-108", "obj-126", "obj-128", "obj-127", "obj-139", "obj-138", "obj-141", "obj-10", "obj-143", "obj-151", "obj-145", "obj-39", "obj-1", "obj-152", "obj-154" ]
+			}
+, 			{
+				"boxes" : [ "obj-16", "obj-69" ]
 			}
  ]
 	}
