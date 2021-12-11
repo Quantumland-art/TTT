@@ -2408,17 +2408,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
-					"midpoints" : [ 37.5, 636.528005464480884, 84.5, 636.528005464480884 ],
-					"order" : 0,
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-82", 0 ],
-					"order" : 1,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -2658,6 +2648,16 @@
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"midpoints" : [ 37.5, 668.693989071038231, 109.25, 668.693989071038231, 109.25, 560.5, 124.5, 560.5 ],
+					"order" : 0,
+					"source" : [ "obj-82", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"midpoints" : [ 37.5, 668.056010928961769, 84.5, 668.056010928961769 ],
+					"order" : 1,
 					"source" : [ "obj-82", 0 ]
 				}
 
@@ -2689,7 +2689,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "TTnorm.maxpat",
-				"bootpath" : "/Volumes/GoogleDrive/.shortcut-targets-by-id/1yqYwm7x3irc1CdHYUgMJrRZBwzLQHoie/_DROPBOX/TTT",
+				"bootpath" : "~/Documents/Max 8/Library/TTT/TTT",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
