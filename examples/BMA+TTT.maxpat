@@ -58,7 +58,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 324.0, 247.0, 296.0, 33.0 ],
-					"presentation_linecount" : 6,
 					"text" : "Refer to BMA source and download the player patch: github.com/iccmr-quantum/Miranda_Basak_Demos"
 				}
 
@@ -153,7 +152,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 24.0, 681.0, 265.0, 47.0 ],
-					"text" : "BMA + Transition Table Performer\n& Transition Table Composer\nOmar Costa Hamido (2022-01-10)"
+					"text" : "BMA + Transition Table Performer\n& Transition Table Composer\nOmar Costa Hamido (2022-01-12)"
 				}
 
 			}
@@ -188,8 +187,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 172.833333333333343, 429.5, 57.0, 22.0 ],
-					"text" : "och.stom"
+					"patching_rect" : [ 172.833333333333343, 429.5, 125.0, 22.0 ],
+					"text" : "och.stom @c4mode 1"
 				}
 
 			}
@@ -4341,7 +4340,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-119",
-					"items" : [ "E", ",", "F", ",", "G", ",", "Cs", ",", "Fs", ",", "Ds", ",", "Gs", ",", "D", ",", "B", ",", "C", ",", "A", ",", "As" ],
+					"items" : [ "C4", ",", "C#4", ",", "D4", ",", "D#4" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
