@@ -76,6 +76,11 @@
 			<description>Insert the labels for each row/column. <br/>This will be a list of ints or symbols for setting the labels using MIDI note numbers or MIDI note names, respectively. <br/>Note: if using symbols you can set your own labels, and TTcomp will respect those labels. <br/>This defaults to 60 61 62 63. </description>
 		</attribute>
 
+		<attribute name='c3mode' get='1' set='1' type='int' size='1'>
+			<digest>Transition Table int labels in c3mode </digest>
+			<description>By default TTcomp will interpret the labels list of ints as pertaining to a list of MIDI not numbers in c4mode, i.e. MIDI note 60 equals C4. <br/>In order to force a c3mode, where MIDI note 60 equals C3, declare this attribute with value 1.</description>
+		</attribute>
+
 	</attributelist>
 
 

@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 524.333333333333371, 90.0, 34.0, 22.0 ],
+					"text" : "sel 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 524.333333333333371, 116.0, 61.0, 22.0 ],
+					"text" : "c4mode 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-129",
 					"linecount" : 3,
 					"maxclass" : "message",
@@ -429,6 +453,7 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-6",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -742,11 +767,11 @@
 					"fontsize" : 9.0,
 					"id" : "obj-39",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 458.0, 8.0, 74.0, 19.0 ],
-					"text" : "route size labels"
+					"numinlets" : 4,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 458.0, 8.0, 118.5, 19.0 ],
+					"text" : "route size labels c3mode"
 				}
 
 			}
@@ -918,6 +943,7 @@
 			}
 , 			{
 				"box" : 				{
+					"columns" : 4,
 					"dialmode" : 1,
 					"dialtracking" : 1,
 					"id" : "obj-28",
@@ -926,8 +952,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "list", "list" ],
 					"parameter_enable" : 0,
+					"patching_rect" : [ 0.0, 0.0, 657.0, 686.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 130.0, 66.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 657.0, 686.0 ],
 					"range" : 101
 				}
 
@@ -947,13 +974,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-4",
-					"linecount" : 2,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 61.0, 630.0, 226.0, 35.0 ],
-					"text" : "\"nan nan nan nan\" \"nan nan nan nan\" \"nan nan nan nan\" \"nan nan nan nan\""
+					"patching_rect" : [ 61.0, 630.0, 226.0, 62.0 ],
+					"text" : "\"0.0000 0.0000 0.0000 0.0000\" \"0.0000 0.0000 0.0000 0.0000\" \"0.0000 0.0000 0.0000 0.0000\" \"0.0000 0.0000 0.0000 0.0000\""
 				}
 
 			}
@@ -1659,7 +1686,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 9.0, 255.0, 50.0, 22.0 ],
-					"text" : "2 3 0"
+					"text" : "3 3 0"
 				}
 
 			}
@@ -1831,6 +1858,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-18", 0 ]
 				}
@@ -1952,6 +1986,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-69", 0 ],
 					"source" : [ "obj-35", 0 ]
 				}
@@ -2020,6 +2061,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-39", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"midpoints" : [ 467.5, 32.0, 289.0, 32.0, 289.0, 60.0, 306.5, 60.0 ],
 					"source" : [ "obj-39", 0 ]
@@ -2029,7 +2077,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
-					"midpoints" : [ 495.0, 60.5, 449.5, 60.5 ],
+					"midpoints" : [ 500.666666666666686, 60.5, 449.5, 60.5 ],
 					"source" : [ "obj-39", 1 ]
 				}
 
@@ -2501,14 +2549,14 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "TTnorm.maxpat",
-				"bootpath" : "/Volumes/GoogleDrive/.shortcut-targets-by-id/1yqYwm7x3irc1CdHYUgMJrRZBwzLQHoie/_DROPBOX/TTT",
+				"bootpath" : "~/Documents/Max 8/Library/TTT/TTT",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TTcomp.js",
-				"bootpath" : "/Volumes/GoogleDrive/.shortcut-targets-by-id/1yqYwm7x3irc1CdHYUgMJrRZBwzLQHoie/_DROPBOX/TTT",
+				"bootpath" : "~/Documents/Max 8/Library/TTT/TTT",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
