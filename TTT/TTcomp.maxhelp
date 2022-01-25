@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 332.0, 53.0, 79.0, 22.0 ],
+					"text" : "C4 E4 G4 B4"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 3,
 					"id" : "obj-154",
 					"linecount" : 2,
@@ -47,8 +59,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 314.5, 430.0, 299.0, 33.0 ],
-					"presentation_linecount" : 2,
-					"text" : "Transition Table Composer\nOmar Costa Hamido (2021-12-06)",
+					"text" : "Transition Table Composer\nOmar Costa Hamido (2022-01-25)",
 					"textjustification" : 2
 				}
 
@@ -60,7 +71,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.5, 443.0, 289.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "(either MIDI note names or MIDI note numbers work)"
 				}
 
@@ -85,7 +95,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 220.5, 368.0, 129.0, 51.0 ],
-					"presentation_linecount" : 4,
 					"text" : "you can also use normal object box. doubleclick to open"
 				}
 
@@ -122,7 +131,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 421.0, 171.0, 125.0, 51.0 ],
-					"presentation_linecount" : 4,
 					"text" : "you can change TTcomp by hand or with messages"
 				}
 
@@ -137,7 +145,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 71.5, 44.5, 113.0, 37.0 ],
-					"presentation_linecount" : 4,
 					"text" : "change size of table and labels"
 				}
 
@@ -149,7 +156,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 71.5, 214.0, 148.0, 33.0 ],
+					"patching_rect" : [ 71.5, 214.0, 150.0, 33.0 ],
 					"text" : "bpatcher @name TTcomp @args 4 C4 E4 G4 B4"
 				}
 
@@ -192,20 +199,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 367.0, 171.0, 52.0, 23.0 ],
-					"presentation_linecount" : 2,
 					"text" : "1 1 100"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 332.0, 79.0, 59.0, 22.0 ],
-					"text" : "route text"
 				}
 
 			}
@@ -223,20 +217,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-16",
-					"keymode" : 1,
-					"maxclass" : "textedit",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "int", "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 332.0, 53.0, 97.0, 22.0 ],
-					"text" : "C4 E4 G4 B4"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-15",
 					"linecount" : 4,
 					"maxclass" : "message",
@@ -244,7 +224,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 186.0, 283.0, 204.0, 62.0 ],
-					"text" : "\"C4 0.2093 0.3023 0.1163 0.3721\" \"E4 0.3333 0.0000 0.3333 0.3333\" \"G4 0.5000 0.5000 0.0000 0.0000\" \"B4 1.0000 0.0000 0.0000 0.0000\""
+					"text" : "\"C4 0.0000 0.0000 0.0000 0.0000\" \"E4 0.0000 0.0000 0.0000 0.0000\" \"G4 0.0000 0.0000 0.0000 0.0000\" \"B4 0.0000 0.0000 0.0000 0.0000\""
 				}
 
 			}
@@ -339,13 +319,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"midpoints" : [ 341.5, 131.5, 233.5, 131.5 ],
 					"source" : [ "obj-17", 0 ]
@@ -355,7 +328,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
-					"source" : [ "obj-18", 0 ]
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -403,21 +376,21 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "TTcomp.maxpat",
-				"bootpath" : "/Volumes/GoogleDrive/.shortcut-targets-by-id/1yqYwm7x3irc1CdHYUgMJrRZBwzLQHoie/_DROPBOX/TTT",
+				"bootpath" : "~/Documents/Max 8/Library/TTT/TTT",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TTnorm.maxpat",
-				"bootpath" : "/Volumes/GoogleDrive/.shortcut-targets-by-id/1yqYwm7x3irc1CdHYUgMJrRZBwzLQHoie/_DROPBOX/TTT",
+				"bootpath" : "~/Documents/Max 8/Library/TTT/TTT",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TTcomp.js",
-				"bootpath" : "/Volumes/GoogleDrive/.shortcut-targets-by-id/1yqYwm7x3irc1CdHYUgMJrRZBwzLQHoie/_DROPBOX/TTT",
+				"bootpath" : "~/Documents/Max 8/Library/TTT/TTT",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
