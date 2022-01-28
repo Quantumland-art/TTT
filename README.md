@@ -14,6 +14,10 @@ __TTnorm__: is used by both _TTcomp_ and _TTperf_ to make sure the TT values are
 
 __BMA+TTT__: is an example of using _TTperf_ and _TTcomp_ with [BMA](https://github.com/iccmr-quantum/Miranda_Basak_Demos).
 
+__TTperf sync with TTcomp__: an example demonstrating how to sync _TTperf_ with _TTcomp_.
+
+![TTperf sync with TTcomp example](/examples/TTperf%20sync%20with%20TTcomp.png)
+
 ## Installation
 Before starting, make sure you have [Max](http://cycling74.com) installed, as well as [_The QAC Toolkit_](http://quantumland.art/qac) Max package.
 
