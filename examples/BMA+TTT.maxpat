@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 2,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 160.0, 131.0, 645.0, 743.0 ],
+		"rect" : [ 813.0, 99.0, 645.0, 743.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,129 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 2,
+							"revision" : 2,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 59.0, 104.0, 208.0, 234.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-1",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 35.0, 31.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.372549, 0.196078, 0.486275, 1.0 ],
+									"id" : "obj-59",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 35.0, 154.5, 82.0, 22.0 ],
+									"text" : "print @level 3"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.372549, 0.196078, 0.486275, 1.0 ],
+									"bgcolor2" : [ 0.2, 0.2, 0.2, 1.0 ],
+									"bgfillcolor_angle" : 270.0,
+									"bgfillcolor_autogradient" : 0.0,
+									"bgfillcolor_color" : [ 0.372549, 0.196078, 0.486275, 1.0 ],
+									"bgfillcolor_color1" : [ 0.372549, 0.196078, 0.486275, 1.0 ],
+									"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
+									"bgfillcolor_proportion" : 0.5,
+									"bgfillcolor_type" : "gradient",
+									"gradient" : 1,
+									"id" : "obj-58",
+									"linecount" : 3,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 35.0, 85.0, 132.0, 49.0 ],
+									"text" : "building circuit based on rules for notes after $1"
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-58", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-59", 0 ],
+									"source" : [ "obj-58", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 568.0, 403.5, 42.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p print"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "message",
@@ -115,8 +238,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 24.0, 578.5, 255.0, 62.0 ],
-					"text" : "\"C4 0.0000 1.0000 0.0000 0.0000\" \"D4 0.0000 0.0000 1.0000 0.0000\" \"E4 0.0000 0.0000 0.0000 1.0000\" \"F4 0.0000 0.0000 0.0000 0.0000\""
+					"patching_rect" : [ 24.0, 578.5, 259.0, 62.0 ],
+					"text" : "\"C4 0.0000 0.0000 0.0000 0.0000\" \"C#4 0.0000 0.0000 0.0000 0.0000\" \"D4 0.0000 0.0000 0.0000 0.0000\" \"D#4 0.0000 0.0000 0.0000 0.0000\""
 				}
 
 			}
@@ -477,7 +600,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 334.0, 681.0, 299.0, 47.0 ],
-					"text" : "BasakMirandaAlgorithm\nrunning natively in Max with The QAC Toolkit\nOmar Costa Hamido [v2.2_beta] (2022-01-27)",
+					"text" : "BasakMirandaAlgorithm\nrunning natively in Max with The QAC Toolkit\nOmar Costa Hamido [v2.3_beta] (2022-03-10)",
 					"textjustification" : 2
 				}
 
@@ -578,13 +701,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 2180.0, 214.0, 246.0, 605.0 ],
+						"rect" : [ 1256.0, 214.0, 246.0, 605.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -613,6 +736,41 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"bgcolor" : [ 0.372549, 0.196078, 0.486275, 1.0 ],
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 123.0, 542.5, 82.0, 22.0 ],
+									"text" : "print @level 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.372549, 0.196078, 0.486275, 1.0 ],
+									"bgcolor2" : [ 0.2, 0.2, 0.2, 1.0 ],
+									"bgfillcolor_angle" : 270.0,
+									"bgfillcolor_autogradient" : 0.0,
+									"bgfillcolor_color" : [ 0.372549, 0.196078, 0.486275, 1.0 ],
+									"bgfillcolor_color1" : [ 0.372549, 0.196078, 0.486275, 1.0 ],
+									"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
+									"bgfillcolor_proportion" : 0.5,
+									"bgfillcolor_type" : "gradient",
+									"gradient" : 1,
+									"id" : "obj-4",
+									"linecount" : 3,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 123.0, 484.5, 112.0, 49.0 ],
+									"text" : "based on the counts we are now playing note $1"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "newobj",
@@ -914,6 +1072,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-44", 0 ],
 									"source" : [ "obj-40", 1 ]
 								}
@@ -1052,6 +1217,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 1 ],
+									"order" : 2,
+									"source" : [ "obj-88", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"midpoints" : [ 82.166666666666671, 467.5, 132.5, 467.5 ],
 									"order" : 1,
 									"source" : [ "obj-88", 0 ]
 								}
@@ -1092,7 +1266,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1415,7 +1589,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1460,7 +1634,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1872,7 +2046,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1918,7 +2092,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2300,7 +2474,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2862,7 +3036,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2981,7 +3155,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 2,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -3255,7 +3429,7 @@
 																		"appversion" : 																		{
 																			"major" : 8,
 																			"minor" : 2,
-																			"revision" : 1,
+																			"revision" : 2,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -4066,7 +4240,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4230,7 +4404,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4383,7 +4557,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4846,7 +5020,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-119",
-					"items" : [ "C4", ",", "D4", ",", "E4", ",", "F4" ],
+					"items" : [ "E", ",", "F", ",", "G", ",", "Cs", ",", "Fs", ",", "Ds", ",", "Gs", ",", "D", ",", "B", ",", "C", ",", "A", ",", "As" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -5189,6 +5363,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-126", 1 ],
+					"order" : 1,
 					"source" : [ "obj-130", 2 ]
 				}
 
@@ -5197,6 +5372,15 @@
 				"patchline" : 				{
 					"destination" : [ "obj-138", 1 ],
 					"source" : [ "obj-130", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"midpoints" : [ 552.5, 396.75, 577.5, 396.75 ],
+					"order" : 0,
+					"source" : [ "obj-130", 2 ]
 				}
 
 			}
@@ -5536,42 +5720,14 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "och.mset.maxpat",
-				"bootpath" : "~/Downloads/Mastering-Quantum-Computing-with-IBM-QX/Chapter08",
-				"patcherrelativepath" : "../../../../../Downloads/Mastering-Quantum-Computing-with-IBM-QX/Chapter08",
-				"type" : "JSON",
+				"name" : "TTcomp.js",
+				"bootpath" : "~/Documents/Max 8/Library/TTT/TTT",
+				"patcherrelativepath" : "../TTT",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "och.hset.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/och/patchers",
-				"patcherrelativepath" : "../../../Packages/och/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "och.states2qubits.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/och/patchers",
-				"patcherrelativepath" : "../../../Packages/och/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "och.xset.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/och/patchers",
-				"patcherrelativepath" : "../../../Packages/och/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "och.binstr2dec.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library",
-				"patcherrelativepath" : "../..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "TTperf.maxpat",
+				"name" : "TTcomp.maxpat",
 				"bootpath" : "~/Documents/Max 8/Library/TTT/TTT",
 				"patcherrelativepath" : "../TTT",
 				"type" : "JSON",
@@ -5585,24 +5741,24 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "och.stom.maxpat",
+				"name" : "TTperf.maxpat",
+				"bootpath" : "~/Documents/Max 8/Library/TTT/TTT",
+				"patcherrelativepath" : "../TTT",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "och.binstr2dec.maxpat",
 				"bootpath" : "~/Documents/Max 8/Library",
 				"patcherrelativepath" : "../..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "TTcomp.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/TTT/TTT",
-				"patcherrelativepath" : "../TTT",
+				"name" : "och.hset.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/och/patchers",
+				"patcherrelativepath" : "../../../Packages/och/patchers",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "TTcomp.js",
-				"bootpath" : "~/Documents/Max 8/Library/TTT/TTT",
-				"patcherrelativepath" : "../TTT",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -5610,8 +5766,36 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "och.mset.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/och/patchers",
+				"patcherrelativepath" : "../../../Packages/och/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "och.mtos.mxo",
 				"type" : "iLaX"
+			}
+, 			{
+				"name" : "och.states2qubits.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/och/patchers",
+				"patcherrelativepath" : "../../../Packages/och/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "och.stom.maxpat",
+				"bootpath" : "~/Documents/Max 8/Library",
+				"patcherrelativepath" : "../..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "och.xset.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/och/patchers",
+				"patcherrelativepath" : "../../../Packages/och/patchers",
+				"type" : "JSON",
+				"implicit" : 1
 			}
  ],
 		"autosave" : 0,
@@ -5619,7 +5803,7 @@
 				"boxes" : [ "obj-16", "obj-69" ]
 			}
 , 			{
-				"boxes" : [ "obj-42", "obj-154", "obj-1", "obj-143", "obj-145", "obj-151", "obj-138", "obj-39", "obj-126", "obj-139", "obj-95", "obj-101", "obj-102", "obj-106", "obj-108", "obj-128", "obj-127", "obj-130", "obj-152", "obj-99", "obj-118", "obj-10", "obj-107", "obj-119", "obj-142", "obj-41", "obj-104", "obj-116", "obj-146", "obj-150", "obj-15", "obj-97", "obj-122", "obj-148" ]
+				"boxes" : [ "obj-42", "obj-154", "obj-1", "obj-145", "obj-151", "obj-143", "obj-39", "obj-152", "obj-138", "obj-10", "obj-139", "obj-102", "obj-106", "obj-126", "obj-128", "obj-127", "obj-150", "obj-95", "obj-107", "obj-108", "obj-19", "obj-99", "obj-101", "obj-104", "obj-118", "obj-130", "obj-119", "obj-142", "obj-41", "obj-116", "obj-146", "obj-97", "obj-15", "obj-122", "obj-148" ]
 			}
  ]
 	}
