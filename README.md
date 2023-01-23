@@ -4,7 +4,7 @@ Transition Table Tools
 ![Package logo](/icon.png)
 
 ## About
-In this repo you will find abstractions that will help build transition tables for music pitch succession. These transition tables (TT) are helpful for algorithmic composition using quantum computers as demostrated by [BMA](https://github.com/iccmr-quantum/Miranda_Basak_Demos).
+In this repo you will find abstractions that will help build transition tables for music pitch succession. These transition tables (TT) are helpful for algorithmic composition using quantum computers as demonstrated by [BMA](https://github.com/iccmr-quantum/Miranda_Basak_Demos).
 
 __TTcomp__: allows the composer to create TT by dialing in the exact weights to each transition.
 
